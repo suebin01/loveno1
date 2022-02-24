@@ -1,0 +1,15 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(152, 124, 124, 0.5);
+  padding: 18px 35px;
+  box-sizing: border-box;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+a path {
+  fill: rgba(54, 52, 65, 0.7);
+}
