@@ -1,0 +1,66 @@
+.welcome-header {
+  margin: 30% 0 10% 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome-header__title {
+  margin-bottom: 40px;
+  font-size: 40px;
+  font-family: "Berkshire Swash", cursive;
+  font-weight: 700;
+  width: 88%;
+}
+.welcome-header__text {
+  line-height: 1.3;
+  width: 80%;
+  opacity: 0.6;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 60px;
+}
+.login-form input {
+  padding: 15px;
+  margin: 8px 0;
+  border: none;
+}
+.login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.login-form input:not([type="submit"]) {
+  border: 1.5px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.login-form input:focus {
+  border-radius: 25px;
+  border-color: var(--main-color);
+}
+
+.login-form input[type="submit"] {
+  font-family: "Berkshire Swash", cursive;
+  font-size: 17px;
+  padding: 20px 0;
+  margin: 35px 0 10px 0;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.login-form input[type="submit"]:hover {
+  color: white;
+  background-color: var(--main-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.login-form a {
+  text-align: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.3;
+}
