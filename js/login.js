@@ -11,4 +11,5 @@ function onLoginSubmit() {
   const userTemp = loginInputTemp.value;
   localStorage.setItem(USERTEMP_KEY, userTemp);
 }
+
 loginForm.addEventListener("submit", onLoginSubmit);
