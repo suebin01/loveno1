@@ -1,0 +1,28 @@
+@keyframes KeepgoingButton {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
+}
+
+.logout {
+  position: fixed;
+  bottom: 85px;
+  animation: KeepgoingButton 15s linear infinite;
+}
+.logout-btn {
+  border: none;
+  background-color: rgba(171, 171, 171, 0.448);
+  border-radius: 12px;
+  padding: 8px 40px;
+  font-size: 16px;
+}
+.logout-btn:hover {
+  background-color: rgb(255, 205, 79);
+  transition: all 0.3s ease-in-out;
+}
