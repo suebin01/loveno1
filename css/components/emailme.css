@@ -1,0 +1,16 @@
+.email-suebin {
+  text-align: center;
+}
+.email-suebin button {
+  border: none;
+  background-color: rgba(232, 232, 232, 0.606);
+  border-radius: 12px;
+  padding: 8px 30px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.email-suebin button:hover {
+  background-color: rgb(255, 205, 79);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}

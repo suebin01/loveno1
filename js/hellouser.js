@@ -6,7 +6,15 @@ function helloUser() {
   ${localStorage.getItem("username")}님!`;
 }
 function checkTemp() {
-  if (localStorage.getItem("temperature") <= 35.3) {
+  if (
+    localStorage.getItem("temperature") <= 25 ||
+    localStorage.getItem("temperature") >= 50
+  ) {
+    afterLoginTemp.innerText = `현재 ${localStorage.getItem(
+      "username"
+    )}님의 체온은 ${localStorage.getItem("temperature")}℃입니다???
+    OMG..Complete nonsense! 혹시 다른 세계에서 왔나요?\n\이세계에서 오셨다면 조용히 제게 연락해주세요.. 비밀스러운 이야기를 나눠봅시다(흐흐)`;
+  } else if (localStorage.getItem("temperature") <= 35.3) {
     afterLoginTemp.innerText = `현재 ${localStorage.getItem(
       "username"
     )}님의 체온은 ${localStorage.getItem("temperature")}℃입니다.

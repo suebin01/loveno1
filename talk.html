@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="loveicon.png" />
+    <link rel="shortcut icon" href="img/loveicon.png" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Info</title>
+    <title>Talk</title>
   </head>
   <body id="talk-page">
     <div class="status-bar">
@@ -27,12 +27,58 @@
       <div class="status-bar__column"></div>
     </div>
 
+    <main class="cafe-service">
+      <div class="cafe-service__text">
+        <span>[안락의자]를 지나 도착한 곳은 [쿠키]입니다.<br />
+          [쿠키]에서는 닿기 위해 걷습니다. 서로를 잇기 위해, 잊지 않기 위해. 몸짓을 합니다. 디저트는 매번 랜덤하게 제공됩니다. 특정 성분에 알레르기 반응이 있거나 개인적으로 원하시는 쿠키가 있다면 미리 예약 바랍니다. 모든 메뉴에 비건 옵션이 존재합니다. 감사합니다.</span>
 
+        <div class="daily-cookie">
+          <h1>Dessert For You</h1>
+          <p class="daily-cookie__text"></p>
+          <img class="daily-cookie__img"/>
+          <p class="daily-cookie__description"></p>
+        </div>
+      </div>
+
+      <div class="email-suebin">
+        <button onclick="location.href='mailto:soobpark@naver.com'"
+        >예약 및 문의</button>
+      </div>
+
+      <div class="cafe-service__info">
+        <div class="total-cookies">
+          <div class="cookie">
+            <p class="cookie__name">말차 비스킷</p>
+            <img src="img/cookies/greentea.png" />
+            <p class="cookie__long">연락할게.  그때 만나면, 모두 다 이야기해 줄게.</p>
+          </div>
+          <div class="cookie">
+            <p class="cookie__name">화이트 마카다미아 쿠키</p>
+            <img src="img/cookies/white.png" />
+            <p class="cookie__long">어쨌든 난 계속하고 있을 거야.</p>
+          </div>
+          <div class="cookie">
+            <p class="cookie__name">오트밀 레이즌 쿠키</p>
+            <img src="img/cookies/oatmeal.png" />
+            <p class="cookie__long">저를 향한 경청의 깊이를 오해했습니다.</p>
+          </div>
+          <div class="cookie">
+            <p class="cookie__name">다크 초콜릿 쿠키</p>
+            <img src="img/cookies/dark.png" />
+            <p class="cookie__long">이게 돛대야. 잘 자라.</p>
+          </div>
+          <div class="cookie">
+            <p class="cookie__name">[한정판] 블루베리 머핀</p>
+            <img src="img/cookies/blueberry.png" />
+            <p class="cookie__long">당신을 데리러 가겠습니다.</p>
+          </div>
+        </div>
+      </div>
+    </main>
 
     <div class="logout">
       <button class="logout-btn" onclick="location.href='index.html'">🚪 로그아웃을 원하신다면 이 버튼을 눌러주세요...</button>
     </div>
-
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
@@ -83,6 +129,7 @@
 
     <script src="js/clock.js"></script>
     <script src="js/date.js"></script>
+    <script src="js/cookie.js"></script>
 
     <script
       src="https://kit.fontawesome.com/e9f12eb269.js"
