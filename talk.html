@@ -29,8 +29,10 @@
 
     <main class="cafe-service">
       <div class="cafe-service__text">
-        <span>[안락의자]를 지나 도착한 곳은 [쿠키]입니다.<br />
-          [쿠키]에서는 닿기 위해 걷습니다. 서로를 잇기 위해, 잊지 않기 위해. 몸짓을 합니다. 디저트는 매번 랜덤하게 제공됩니다. 특정 성분에 알레르기 반응이 있거나 개인적으로 원하시는 쿠키가 있다면 미리 예약 바랍니다. 모든 메뉴에 비건 옵션이 존재합니다. 감사합니다.</span>
+        <span>[안락의자]를 지나 도착한 곳은 [쿠키]입니다.<br /><br/>
+          [쿠키]에서는 닿기 위해 걷습니다. 서로를 잇기 위해, 잊지 않기 위해. 몸짓을 합니다. 깜박이는 두 눈을 바라봅니다. 높아지고 낮아지는 목소리의 형태에 잠자코 귀 기울입니다.<br/>
+          Suebin's Café의 디저트는 매번 랜덤하게 제공됩니다. 특정 성분에 알레르기 반응이 있거나 개인적으로 원하시는 쿠키가 있다면 미리 예약 바랍니다.<br/>
+          모든 메뉴에 비건 옵션이 존재합니다. 감사합니다.</span>
 
         <div class="daily-cookie">
           <h1>Dessert For You</h1>
@@ -47,31 +49,91 @@
 
       <div class="cafe-service__info">
         <div class="total-cookies">
-          <div class="cookie">
+          <div id="malcha" class="cookie">
             <p class="cookie__name">말차 비스킷</p>
             <img src="img/cookies/greentea.png" />
             <p class="cookie__long">연락할게.  그때 만나면, 모두 다 이야기해 줄게.</p>
           </div>
-          <div class="cookie">
+          <div class="cookie-popup hidden malcha">
+            <div class="cookie-popup__overlay"></div>
+            <div class="cookie-popup__content">
+              <button class="cookie-popup__exit">🆇</button>
+              <h1>말차 비스킷</h1>
+              <h2>연락할게. 그때 만나면, 모두 다 이야기해 줄게.</h2>
+              <p>선생님, 잘 지내세요? 스케치북 정말 감사드려요. 나중에 만화를 그리면 꼭 선생님 캐릭터를 넣을 거예요. 선생님은 머리가 짧고, 안경을 낀 괴짜 캐릭터로 나올 거예요. 제 예감에 독자들은 선생님을 많이 좋아할 것 같아요. 사람들이 외로울 때 제 만화를 보고 힘을 얻었으면 좋겠어요. ・・・. 선생님, 제 삶도 언젠가 빛이 날까요?</p>
+              <p class="letter"><span class="letter__text">수빈의 목소리</span>쌉싸래한 말차 향에 콕콕 박힌 아몬드. 향긋하면서 묵직한, 영지 선생님이 끓여준 우롱차를 닮은 맛.</p>
+              <h6>- '벌새', 김보라</h6>
+            </div>
+          </div>
+
+          <div id="white" class="cookie">
             <p class="cookie__name">화이트 마카다미아 쿠키</p>
             <img src="img/cookies/white.png" />
             <p class="cookie__long">어쨌든 난 계속하고 있을 거야.</p>
           </div>
-          <div class="cookie">
+          <div class="cookie-popup hidden white">
+            <div class="cookie-popup__overlay"></div>
+            <div class="cookie-popup__content">
+              <button class="cookie-popup__exit">🆇</button>
+              <h1>화이트 마카다미아 쿠키</h1>
+              <h2>어쨌든 난 계속하고 있을 거야.</h2>
+              <p>그럴 일이 아니야 인선아, 라고 나는 만류했지만, 그녀는 마치 사과의 말에 너그럽게 답하는 사람처럼 괜찮아, 라고 말했다. 거꾸로 나를 달래는 듯 인내심이 배어 있는 목소리였다. 난 괜찮아 경하야. 걱정할 거 없어.</p>
+              <p class="letter"><span class="letter__text">수빈의 목소리</span>입 안에 오래 감도는 화이트 초콜릿의 맛. 그 사이를 뚫고 나오는 버석한 마카다미아 조각들. 인선과 경하의 이야기. 사랑은 원래 이렇게 눅진하고 단단한 걸까요?</p>
+              <h6>- 『작별하지 않는다』, 한강</h6>
+            </div>
+          </div>
+
+          <div id="oatmeal" class="cookie">
             <p class="cookie__name">오트밀 레이즌 쿠키</p>
             <img src="img/cookies/oatmeal.png" />
             <p class="cookie__long">저를 향한 경청의 깊이를 오해했습니다.</p>
           </div>
-          <div class="cookie">
+          <div class="cookie-popup hidden oatmeal">
+            <div class="cookie-popup__overlay"></div>
+            <div class="cookie-popup__content">
+              <button class="cookie-popup__exit">🆇</button>
+              <h1>오트밀 레이즌 쿠키</h1>
+              <h2>저를 향한 경청의 깊이를 오해했습니다.</h2>
+              <p>선생님을 그날 만날 수 없게 되었을 때, 창경궁 뜰 안 어느 돌 틈을 밟고, 실은 조금 안도했습니다. 선생님께서 듣고 싶어 하실 만한 이야기를 제 안에서 한 톨도 길어낼 자신이 없었기 때문입니다. 그러나 이 대목에서 저는 잘못했지요. 선생님께서 제게 듣고 싶어 하실 만한 이야기를 감히 속단했습니다. 저를 향한 경청의 깊이를 오해했습니다. 감히 외로운 척을 했습니다. 그것이 미안합니다.</p>
+              <p class="letter"><span class="letter__text">수빈의 목소리</span>쫀득한 오트밀 사이로 튀어나온 달콤한 건포도. 당신 마음을 혼자 지레짐작해버려 미안해요, 다만 보지 않으면 알 수 없어서 그랬어요.</p>
+              <h6>- 『모국어는 차라리 침묵』, 목정원</h6>
+            </div>
+          </div>
+
+          <div id="dark" class="cookie">
             <p class="cookie__name">다크 초콜릿 쿠키</p>
             <img src="img/cookies/dark.png" />
             <p class="cookie__long">이게 돛대야. 잘 자라.</p>
           </div>
-          <div class="cookie">
+          <div class="cookie-popup hidden dark">
+            <div class="cookie-popup__overlay"></div>
+            <div class="cookie-popup__content">
+              <button class="cookie-popup__exit">🆇</button>
+              <h1>다크 초콜릿 쿠키</h1>
+              <h2>이게 돛대야. 잘 자라.</h2>
+              <p>미조야, 나는 글도 잘 쓰고 그림도 잘 그려서 뭐라도 될 줄 알았는데 지금 이렇게 레종과 도림천에 버려져 있다. 미조야, 나는 예쁘지도 않고 날씬하지도 않은데 그게 한 번도 걱정된 적은 없는데 지금 담배가 다 떨어져가고 있는 게 너무 걱정된다. 이게 돛대야. 잘 자라.</p>
+              <p class="letter"><span class="letter__text">수빈의 목소리</span>버려져 있을 때 주워드는 쿠키. Suebin's Café에서 가장 진하고 달달한 쿠키에요. 어떤 날엔 그저 담배 한 모금, 다크 초콜릿 쿠키 한 입.</p>
+              <h6>- 「미조의 시대」, 이서수(『소설보다 여름 2021』 중)</h6>
+            </div>
+          </div>
+
+          <div id="blueberry" class="cookie">
             <p class="cookie__name">[한정판] 블루베리 머핀</p>
             <img src="img/cookies/blueberry.png" />
             <p class="cookie__long">당신을 데리러 가겠습니다.</p>
           </div>
+          <div class="cookie-popup hidden blueberry">
+            <div class="cookie-popup__overlay"></div>
+            <div class="cookie-popup__content">
+              <button class="cookie-popup__exit">🆇</button>
+              <h1>[한정판] 블루베리 머핀</h1>
+              <h2>당신을 데리러 가겠습니다.</h2>
+              <p>세은은 메시지를 저장하고 부스 안에서 심호흡을 했다. 부스 밖으로 나가기 위해. 최후의 최후의 최후까지 싸우기 위해. 지구를, 미래를, 가능성을 뺴앗기지 않고 버티기 위해. 뺏기지 말라고, 네가 그랬으니까.</p>
+              <p class="letter"><span class="letter__text">수빈의 목소리</span>오직 당신만을 구하기 위해 행해진 몸짓. 몸짓의 존재를 믿으세요. 그 안에 담긴 애정과 사랑을 믿으세요. 그들을 하나로 더했을 때 발생하는 힘을 끝내 믿으세요.</p>
+              <h6>- 『궤도의 밖에서, 나의 룸메이트에게』, 전삼혜</h6>
+            </div>
+          </div>
+
         </div>
       </div>
     </main>
@@ -130,6 +192,7 @@
     <script src="js/clock.js"></script>
     <script src="js/date.js"></script>
     <script src="js/cookie.js"></script>
+    <script src="js/cookieclick.js"></script>
 
     <script
       src="https://kit.fontawesome.com/e9f12eb269.js"

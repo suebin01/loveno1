@@ -1,4 +1,4 @@
-const popupScreen = document.querySelector(".popup-bgr");
+const popupScreen = document.querySelector(".popup");
 const checkPopup = document.querySelector(".ok");
 const cancelPopup = document.querySelector(".cancel");
 
