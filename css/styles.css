@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Noto+Sans+KR:wght@100;400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aladin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
 
 @import "reset.css";
 @import "variables.css";
@@ -8,6 +9,7 @@
 @import "components/nav-bar.css";
 @import "components/logout-btn.css";
 @import "components/emailme.css";
+@import "components/no-mobile.css";
 
 @import "screens/login.css";
 @import "screens/info.css";
@@ -30,4 +32,51 @@ body {
   margin-top: 10px;
   font-size: 13.5px;
   color: #a2978b;
+}
+
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}
+
+#splash-screen {
+  background: radial-gradient(rgb(169, 192, 230), rgb(164, 124, 120));
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  display: flex;
+  padding: 60px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  animation: hideSplashScreen 0.5s ease-in-out forwards;
+  animation-delay: 10s;
+}
+#splash-screen img {
+  width: 65%;
+}
+#splash-screen div {
+  background-color: rgba(255, 245, 219, 0.7);
+  height: 30px;
+  width: 100%;
+  position: fixed;
+}
+#splash-screen div:first-child {
+  top: 0;
+}
+#splash-screen div:last-child {
+  bottom: 0;
+}
+
+.splash-title {
+  font-size: 100px;
+  color: rgba(255, 245, 219, 0.7);
+  font-family: "Orbitron", sans-serif;
+  text-shadow: 2px 2px 2px white;
 }
