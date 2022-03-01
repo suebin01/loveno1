@@ -3,6 +3,7 @@
 }
 .email-suebin button {
   border: none;
+  cursor: pointer;
   background-color: rgba(232, 232, 232, 0.606);
   border-radius: 12px;
   padding: 8px 30px;

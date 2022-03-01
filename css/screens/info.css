@@ -40,7 +40,7 @@
   height: 100%;
 }
 .popup-box {
-  width: 70%;
+  width: 80%;
   height: 65%;
   max-width: 360px;
   max-height: 320px;
@@ -77,6 +77,7 @@
   border: none;
   background-color: silver;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .popup-box .ok:hover {
@@ -97,7 +98,6 @@
   border: 2.5px double rgba(0, 0, 0, 0.4);
   line-height: 1.5;
   font-size: 14px;
-  text-indent: 3.43%;
 }
 .cafe-service__text img {
   width: 90%;

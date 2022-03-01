@@ -1,3 +1,192 @@
 #nav__link--key path {
   fill: rgb(251, 242, 219);
 }
+
+@-webkit-keyframes flicker-2 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 1;
+  }
+  45.99% {
+    opacity: 1;
+  }
+  46% {
+    opacity: 0;
+  }
+  46.9% {
+    opacity: 0;
+  }
+  46.91% {
+    opacity: 1;
+  }
+  51.99% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  52.8% {
+    opacity: 0;
+  }
+  52.81% {
+    opacity: 1;
+  }
+}
+@keyframes flicker-2 {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  41.99% {
+    opacity: 1;
+  }
+  42% {
+    opacity: 0;
+  }
+  43% {
+    opacity: 0;
+  }
+  43.01% {
+    opacity: 1;
+  }
+  45.99% {
+    opacity: 1;
+  }
+  46% {
+    opacity: 0;
+  }
+  46.9% {
+    opacity: 0;
+  }
+  46.91% {
+    opacity: 1;
+  }
+  51.99% {
+    opacity: 1;
+  }
+  52% {
+    opacity: 0;
+  }
+  52.8% {
+    opacity: 0;
+  }
+  52.81% {
+    opacity: 1;
+  }
+}
+
+#self-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 12px;
+  margin-bottom: 20px;
+  background-color: black;
+}
+
+.question {
+  font-size: 14vw;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: rgb(77, 77, 77);
+  -webkit-animation: flicker-2 2s linear infinite both;
+  animation: flicker-2 2s linear infinite both;
+  text-shadow: 3px 3px 7px rgb(255, 255, 255);
+}
+.self-video__poem {
+  color: rgba(255, 255, 255, 0.616);
+  font-weight: 300;
+  font-size: 12px;
+  margin-top: 20px;
+  font-style: italic;
+  line-height: 1.3;
+}
+
+#self-video div {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+#videoElement,
+#mirrored {
+  width: 49%;
+  background-color: rgba(255, 255, 255, 0);
+  filter: grayscale(100%);
+}
+
+#audio-pierre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+#audio-pierre p {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  color: rgba(59, 59, 59, 0.616);
+}
+
+hr:first-child {
+  margin-top: 10px;
+}
+hr:last-child {
+  margin-bottom: 10px;
+}
+
+.email-suebin__inquiry {
+  margin: 50px 0 100px 0;
+}
+
+.canvas {
+  height: 30%;
+  width: 100%;
+  background-color: white;
+}
+
+#recording {
+  text-align: center;
+}
+
+#recording button {
+  all: unset;
+  cursor: pointer;
+  padding: 8px 13px;
+  border-radius: 13px;
+  background-color: rgba(232, 232, 232, 0.606);
+  font-size: 15px;
+  margin: -10px 3px 10px 3px;
+}
+
+.recorded-audio__text {
+  text-align: center;
+  font-size: 12px;
+  margin: 10px 0 20px 0;
+  color: rgba(59, 59, 59, 0.616);
+}
+.cafe-service__poem {
+  font-size: 13px;
+  color: rgba(82, 63, 63, 0.8);
+  font-style: italic;
+}
+.cafe-service__text--long span {
+  font-family: "Berkshire Swash", cursive;
+}
+.song-detail {
+  font-style: oblique;
+  color: rgb(145, 97, 97);
+}

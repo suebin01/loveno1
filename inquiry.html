@@ -29,18 +29,58 @@
 
     <main class="cafe-service">
       <div class="cafe-service__text">
-        <span>[쿠키]를 지나 도착한 곳은 [열쇠]입니다.<br />
-          [열쇠]에서는 질문을 던집니다.</span>
+        <span>[쿠키]를 지나 도착한 곳은 [열쇠]입니다.<br /><br/>
+          [열쇠]에서는 질문을 던집니다.<br/>
+          당신은 누구인가요? 당신은 "당신이 누구인지" 정확히 알고 있나요?<br/>
+          정확히 바라보기 위해서, 정확히 이해하기 위해서.<br/>
+          우리는 무엇을 어떻게 해야 할까요?</span>
       </div>
 
-      <canvas id="my-house" width="300" height="500"></canvas>
+      <div id="self-video">
+        <p class="question">나는 . . . </p>
+        <div>
+          <video autoplay="true" id="videoElement"></video>
+          <canvas class="canvas" id="mirrored"></canvas>
+        </div>
+        <p class="self-video__poem">✶ 나는지금(至今)거울을안가졌오마는거울속에는늘거울속의내가있오</p>
+      </div>
+      <hr /><br/>
+      <div id="audio-pierre">
+        <audio autoplay controls class="radio-audio">
+          <source src="symphoniepourunhommesoul.webm" type="audio/mp3">
+        </audio>
+        <p>Symphonie pour un homme seul<br/>
+          - Pierre Schaeffer et Pierre Henry</p>
+      </div>
+      <hr /><br/>
 
-      <div class="email-suebin">
-        <button onclick="location.href='mailto:soobpark@naver.com'"
-        >피드백 및 문의</button>
+      <div class="cafe-service__text">
+        <span class="cafe-service__text--long">이상은 시 '거울'에서 말합니다.<br /><br />
+          <p class="cafe-service__poem">"거울속의나는왼손잡이오<br />
+            내악수(握手)를받을줄모르는―악수(握手)를모르는왼손잡이오<br />
+            거울때문에나는거울속의나를만져보지를못하는구료마는<br />
+            거울아니었던들내가어찌거울속의나를만나보기만이라도했겠소"<br /><br /></p>
+
+          화장실에서 무심코 고개를 들어, 거울 속 나를 깊이 들여다본 적이 있나요? 가만히 눈을 맞추고 서 있다 보면, 거울 건너편에 있는 눈동자 속으로 깊이 빨려드는 느낌이 들곤 합니다. 저는 괜히 섬뜩해진 기분으로, 이리저리 고개 젓고는 다시 세수에 몰입합니다.<br/>
+          가끔 그렇게 소름끼치는 순간이 있습니다. 태어나서 죽을 때까지 자기 얼굴을 직접 볼 기회가 단 한번도 없다는 건 좀 아이러니합니다. 우리는 항상 거울을 통해서, 카메라 렌즈 너머로 자신의 얼굴을 접합니다.<br/>
+          목소리도 비슷합니다. 가끔 자신의 목소리를 녹음해 들어보면, 분명히 내가 평소에 듣는 나의 목소리는 사뭇 다른 데가 있습니다. 그건 우리가 소리내어 말할 때 두개골의 진동과 더해진 소리를 듣기 때문이라고 합니다.<br/><br/>
+          완전히 바깥에서 자신의 얼굴과 목소리를 바라보는 일은 평생 불가능할 테지만, 이곳 [열쇠]에서는 의식적으로 가까이 다가가봅니다. <span>Suebin’s Café</span>에서 준비한 <span class="song-detail">Pierre Schäffer, Pierre Henry</span>의 <span class="song-detail">‘Symphonie pour un homme seul(Symphony for One Man Alone)</span>’이 가까워지는 경험에 도움이 되길 바랍니다.
+        </span>
+      </div>
+
+      <div id="recording">
+        <button id="record">● 녹음</button>
+        <button id="stop">■ 정지</button>
+        <div id="sound-clips"></div>
       </div>
 
     </main>
+
+    <div class="email-suebin email-suebin__inquiry">
+      <button onclick="location.href='mailto:soobpark@naver.com'"
+      >피드백 및 문의</button>
+    </div>
+
 
     <div class="logout">
       <button class="logout-btn" onclick="location.href='index.html'">🚪 로그아웃을 원하신다면 이 버튼을 눌러주세요...</button>
@@ -96,6 +136,7 @@
     <script src="js/clock.js"></script>
     <script src="js/date.js"></script>
     <script src="js/canvas.js"></script>
+    <script src="js/recording.js"></script>
     <script
       src="https://kit.fontawesome.com/e9f12eb269.js"
       crossorigin="anonymous"

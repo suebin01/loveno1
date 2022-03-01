@@ -21,6 +21,7 @@
   border-radius: 12px;
   padding: 8px 30px;
   font-size: 15px;
+  cursor: pointer;
 }
 .logout-btn:hover {
   background-color: rgb(255, 205, 79);
