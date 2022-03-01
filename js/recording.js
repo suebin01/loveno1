@@ -44,7 +44,7 @@ if (navigator.mediaDevices) {
 
         const clipName = prompt(
           "오디오 파일 제목을 입력하세요.",
-          `Music created by ${localStorage.getItem("username")}(${String(
+          `${localStorage.getItem("username")}'s Voice(${String(
             new Date().getFullYear()
           ).padStart(4, "0")}-${String(new Date().getMonth()).padStart(
             2,

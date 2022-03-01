@@ -28,18 +28,104 @@
     </div>
 
     <main class="cafe-service">
+      <h1 class="bye-userName"></h1>
       <div class="cafe-service__text">
-        <span>[열쇠]를 지나 도착한 마지막 공간은 [숲]입니다.<br />
-          [숲]에서는 질문을 던집니다.</span>
+        <span></span>
       </div>
 
-      <div class="email-suebin">
-        <button onclick="location.href='mailto:soobpark@naver.com'"
-        >피드백 및 문의</button>
+      <div class="contact">
+        <p class="contact-text">Contact Me!</p>
+        <div class="contact-me">
+          <div><a href="mailto:soobpark@naver.com">Email</a></div>
+          <div><a href="https://open.kakao.com/o/sMOrplBc" target="_blank">Openchat</a></div>
+        </div>
       </div>
-
     </main>
 
+    <div class="cafe-service__text card-game__description">
+      <p>[숲]은 Suebin's Café에서 운영하는 정원입니다.<br/>
+        주인장이 다양한 식물을 심고 가꿉니다. 주인장은 특히 선인장과 이끼를 애정합니다. Suebin's Garden 오픈 기념으로 카드 게임에 참여할 수 있으니 많은 사랑 부탁드립니다. Thank you so much!</p>
+      <button class="card-game__enter">Q. 카드 게임에 참여하시겠습니까?</button>
+    </div>
+
+    <section class="hidden memory">
+      <div class="memory__overlay"></div>
+      <div class="memory-game memory-game__content">
+        <button class="memory-game__exit">🆇</button>
+        <p>Welcome to<br/>Suebin's garden</p>
+        <div class="memory-cards">
+          <div class="memory-card" data-framework="blue">
+            <img class="front-face" src="img/forest/blue.png" alt="blue" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="blue">
+            <img class="front-face" src="img/forest/blue.png" alt="blue" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="flora">
+            <img class="front-face" src="img/forest/flora.png" alt="flora" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="flora">
+            <img class="front-face" src="img/forest/flora.png" alt="flora" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="leaves">
+            <img class="front-face" src="img/forest/leaves.png" alt="leaves" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="leaves">
+            <img class="front-face" src="img/forest/leaves.png" alt="leaves" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="moss">
+            <img class="front-face" src="img/forest/moss.png" alt="moss" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="moss">
+            <img class="front-face" src="img/forest/moss.png" alt="moss" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="orange">
+            <img class="front-face" src="img/forest/orange.png" alt="orange" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="orange">
+            <img class="front-face" src="img/forest/orange.png" alt="orange" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card"  data-framework="primrose">
+            <img class="front-face" src="img/forest/primrose.png" alt="primrose" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card"  data-framework="primrose">
+            <img class="front-face" src="img/forest/primrose.png" alt="primrose" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="reds">
+            <img class="front-face" src="img/forest/reds.png" alt="reds" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="reds">
+            <img class="front-face" src="img/forest/reds.png" alt="reds" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="white">
+            <img class="front-face" src="img/forest/white.png" alt="white" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+          <div class="memory-card" data-framework="white">
+            <img class="front-face" src="img/forest/white.png" alt="white" />
+            <img class="back-face" src="img/loveicon.png" alt="Loveicon" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+  
     <div class="logout">
       <button class="logout-btn" onclick="location.href='index.html'">🚪 로그아웃을 원하신다면 이 버튼을 눌러주세요...</button>
     </div>
@@ -93,6 +179,8 @@
 
     <script src="js/clock.js"></script>
     <script src="js/date.js"></script>
+    <script src="js/byebye.js"></script>
+    <script src="js/scripts.js"></script>
     <script
       src="https://kit.fontawesome.com/e9f12eb269.js"
       crossorigin="anonymous"
